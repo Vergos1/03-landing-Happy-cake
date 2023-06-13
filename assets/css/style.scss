@@ -1,0 +1,631 @@
+body {
+  font-family: "Montserrat";
+  color: black;
+}
+
+// body
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// all elemenets
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #ffeef4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  flex-wrap: wrap;
+
+  .logo {
+    img {
+      width: 100%;
+    }
+  }
+
+  .menu {
+    .menu__list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+
+      .menu__item {
+        list-style-type: none;
+        margin: 0 15px;
+
+        a {
+          text-decoration: none;
+          color: #e85668;
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+// header section
+
+.section {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+// section all
+.container {
+  padding: 5% 5%;
+}
+
+// container all
+
+.main {
+  background-image: url(../img/main-bground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15%;
+
+  .main-text {
+    .main-text__title {
+      font-weight: 700;
+      font-size: 64px;
+      color: white;
+    }
+
+    .main-text__desc {
+      font-weight: 400;
+      font-size: 24px;
+      color: white;
+      margin: 30px 0 110px 0;
+      line-height: 160%;
+    }
+
+    .main-text__button {
+      color: white;
+      outline: none;
+      border: 1px solid #ffffff;
+      border-radius: 57px;
+      background: transparent;
+      cursor: pointer;
+      padding: 15px 30px;
+      font-weight: 400;
+      font-size: 24px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.095);
+      }
+    }
+  }
+}
+
+// main section
+
+.about-us {
+  .about-us__wrap {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    .about-us__img {
+      img {
+        border-radius: 15px;
+        max-height: 600px;
+      }
+    }
+
+    .about-us__inner {
+      max-width: 400px;
+      max-height: 600px;
+      border-radius: 15px;
+      background-color: #e85668;
+      color: white;
+      padding: 40px 3%;
+      box-sizing: border-box;
+
+      .about-us__title {
+        font-weight: 600;
+        margin-bottom: 60px;
+        font-size: 48px;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 6px;
+          width: 112px;
+          background: white;
+          position: relative;
+          top: 13px;
+        }
+      }
+
+      .about-us__desc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+      }
+    }
+  }
+}
+
+// about-us us section
+
+.features {
+  background-color: #e8566710;
+  text-align: center;
+
+  .features__title {
+    color: #e85668;
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 120px;
+  }
+
+  .features__wrap {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .features__item {
+      .features__ico {
+        margin-bottom: 30px;
+      }
+
+      .features__slogan {
+        font-weight: 500;
+        font-size: 36px;
+        color: #e85668;
+        margin-bottom: 18px;
+      }
+
+      .features__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+// features section
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 90px;
+}
+
+.catalog {
+  text-align: center;
+
+  .catalog__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .catalog__item {
+      img {
+        cursor: pointer;
+
+        &:hover {
+          filter: contrast(0.8);
+        }
+      }
+
+      .catalog__name {
+        margin: 20px 0 40px 0;
+        font-weight: 600;
+        font-size: 24px;
+      }
+
+      .catalog__button {
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: #e85668;
+        padding: 10px 30px;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// catalog section
+
+.picture {
+  background-image: url(../img/picture-bground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 437px;
+}
+
+// picture section
+
+.reviews {
+  text-align: center;
+
+  .reviews__slider {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+    .reviews__slide {
+      display: none;
+
+      .reviews__desc {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        margin: 50px 0 25px 0;
+      }
+
+      .reviews__name {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+      }
+
+      .reviews__profession {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .reviews__dote {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 50px 2px;
+    background-color: #e85668;
+    opacity: 0.1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .reviews__dote:hover {
+    background-color: #e85668;
+    opacity: 1;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+// reviews section
+
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.639);
+  display: none;
+
+  .open {
+    display: block;
+  }
+
+  .modal__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 3%;
+
+    .modal__content {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 2% 3%;
+
+      .modal__close {
+        text-align: end;
+        cursor: pointer;
+        font-size: 21px;
+      }
+
+      .modal__title {
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+
+      .modal__field {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 12px;
+        margin-bottom: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .modal__label {
+          font-weight: 500;
+          font-size: 20px;
+          margin-left: 10px;
+          margin-bottom: 12px;
+          display: flex;
+        }
+
+        .modal__input {
+          padding: 10px 15px;
+          border: 1px solid #E85668;
+          border-radius: 93px;
+          outline: none;
+          background-color: rgba(232, 86, 104, 0.05);
+          width: 100%;
+        }
+      }
+
+      .modal__button {
+        background-color: #E85668;
+        border-radius: 50px;
+        padding: 15px 50px;
+        border: none;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 20px;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+// modal window 
+
+.gallery {
+  text-align: center;
+  background-color: #e8566710;
+
+  .gallery__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+      width: calc(25% - 25px);
+
+      &:hover {
+        filter: contrast(0.8);
+        cursor: pointer;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+
+
+// screen max-width 1023px
+@media screen and(max-width: 480px) {
+  header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .menu {
+      .menu__list {
+        flex-direction: column;
+
+        .menu__item {
+          margin: 7px 0;
+
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  // header section
+
+  .main {
+    .main-text {
+      .main-text__title {
+        font-size: 2rem;
+      }
+
+      .main-text__desc {
+        font-size: 1rem;
+        margin: 50px 0;
+      }
+
+      .main-text__button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  // main section
+
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+
+    .about-us__wrap {
+      flex-wrap: wrap;
+
+      .about-us__img {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .about-us__inner {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+
+        .about-us__title {
+          font-size: 2.5rem;
+
+          &::after {
+            position: relative;
+            top: 15px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+          }
+        }
+
+        .about-us__desc {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  // about-us us section
+
+  .features {
+    .features__title {
+      font-size: 3rem;
+      margin-bottom: 50px;
+    }
+
+    .features__wrap {
+      flex-wrap: wrap;
+
+      .features__item {
+        margin: 40px 0;
+
+        .features__slogan {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  // features section
+
+  .title {
+    font-size: 2.5rem;
+    margin: 50px 0;
+  }
+
+  .catalog {
+    .catalog__wrap {
+      flex-wrap: wrap;
+
+      .catalog__item {
+        margin: 30px 0;
+      }
+    }
+  }
+
+  // catalog section
+
+  .picture {
+    height: 150px;
+    background-size: 150%;
+  }
+
+  // picture section
+
+  // reviews section
+
+  .reviews {
+    .reviews__slider {
+      .reviews__slide {
+        .reviews__img {
+          img {
+            width: 70%;
+          }
+        }
+      }
+
+      .prev,
+      .next {
+        top: 90%;
+      }
+    }
+
+    .reviews__dote {
+      margin: 30px 2px;
+    }
+  }
+
+  // reviews section
+
+  // gallery section 
+
+
+  .gallery {
+    .gallery__wrap {
+      img {
+        width: auto;
+      }
+    }
+  }
+
+  // gallery section 
+}
+
+
+
+
+
+// screen max-width 1023px
